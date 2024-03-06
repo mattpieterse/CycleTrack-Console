@@ -11,7 +11,8 @@ namespace CycleTrack_Console {
         private List<Period> periods = new List<Period>();
 
         public void AddHistory(Period period) {
-
+            periods.Add(period);
+            SaveData();
         }
 
         public Period CalculateNext() {
