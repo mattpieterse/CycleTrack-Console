@@ -27,7 +27,10 @@ namespace CycleTrack_Console {
         }
 
         private void LoadData() { 
-        
+            if (File.Exists("periods.txt")) {
+                string data = File.ReadAllText("periods.txt");
+                periods = JsonConvert.DeserializeObject<List<Period>>(data);
+            }
         }
     }
 }
