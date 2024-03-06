@@ -9,6 +9,10 @@ namespace CycleTrack_Console {
         static void Main(string[] args) {
 
             Initialize();
+
+            Console.WriteLine("|-------------------------|");
+            Console.WriteLine("| Cycle Tracker / (1.0.0) |");
+            Console.WriteLine("|-------------------------|\n");
         }
 
         static void Initialize() {
