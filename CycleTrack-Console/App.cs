@@ -7,6 +7,13 @@ using System.Threading.Tasks;
 namespace CycleTrack_Console {
     internal class App {
         static void Main(string[] args) {
+
+            Initialize();
+        }
+
+        static void Initialize() {
+            Tracker tracker = new Tracker();
+            tracker.LoadData();
         }
     }
 }

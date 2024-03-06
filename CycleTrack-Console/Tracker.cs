@@ -21,12 +21,12 @@ namespace CycleTrack_Console {
             return new Period();
         }
 
-        private void SaveData() {
+        public void SaveData() {
             string data = JsonConvert.SerializeObject(periods);
             File.WriteAllText("periods.txt", data);
         }
 
-        private void LoadData() { 
+        public void LoadData() { 
             if (File.Exists("periods.txt")) {
                 string data = File.ReadAllText("periods.txt");
                 periods = JsonConvert.DeserializeObject<List<Period>>(data);
