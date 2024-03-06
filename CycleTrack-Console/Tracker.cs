@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace CycleTrack_Console {
     internal class Tracker {
 
-        private List<Period> periods = new List<Period>();
+        public List<Period> periods = new List<Period>();
 
         public void AddHistory(Period period) {
             periods.Add(period);
