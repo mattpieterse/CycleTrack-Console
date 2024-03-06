@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CycleTrack_Console {
-    internal class Perdiod {
+    internal class Period {
+        public DateTime startDate {  get; set; }
+        public DateTime endDate { get; set; }
     }
 }
